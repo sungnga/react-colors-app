@@ -1,3 +1,21 @@
+### STEPS TO BUILD THE COLOR PALETTE PROJECT
+- Install create-react-app: `npx create-react-app react-colors-app`
+- In the App.js file:
+  - Render the Palette component
+  - pass in as props(spread in) the seedColors (coming from seedColors.js) in the Palette component 
+- Create a Palette.js component
+  - Rendered in App.js. Props: `this.props.colors`
+  - map over the seedColor props and for each color, extract the color and color name and pass it to ColorBox component as props
+  - Render the ColorBox component after mapping over each color
+  ```javascript
+  const colorBoxes = this.props.colors.map(color => (
+      <ColorBox background={color.color} name={color.name} />
+  ))
+  ```
+- Create the ColorBox component
+  - Rendered in Palette.js. Props: `this.props.background` & `this.props.name`
+  - Render the background color and name of color
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
