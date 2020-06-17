@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import ColorBox from './ColorBox';
-
-// NOTE: ORDER OF IMPORT IS IMPORTANT!
-// To override the default styles, import your style file after the vendor style file
-import 'rc-slider/assets/index.css';
+import Navbar from './Navbar';
 import './Palette.css';
-import Slider from 'rc-slider';
+
 
 export default class Palette extends Component {
 	constructor(props) {
@@ -25,16 +22,8 @@ export default class Palette extends Component {
 		));
 		return (
 			<div className='Palette'>
-				<div className='slider'>
-					<Slider
-						defaultValue={level}
-						min={100}
-						max={900}
-						step={100}
-						onAfterChange={this.changeLevel}
-					/>
-				</div>
-				{/* Navbar goes here */}
+
+				<Navbar level={level} changeLevel={this.changeLevel} />
 				<div className='Palette-colors'>{colorBoxes}</div>
 				{/* footer */}
 			</div>
