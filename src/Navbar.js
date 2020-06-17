@@ -9,6 +9,7 @@ import CloseIcon from '@material-ui/icons/Close';
 // To override the default styles, import your style file after the vendor style file
 import 'rc-slider/assets/index.css';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
 	constructor(props) {
@@ -32,7 +33,7 @@ class Navbar extends Component {
 		return (
 			<header className='Navbar'>
 				<div className='logo'>
-					<a href='#'>reactcolorpicker</a>
+					<Link to='/'>reactcolorpicker</Link>
 				</div>
 				<div className='slider-container'>
 					<span>Level: {level}</span>

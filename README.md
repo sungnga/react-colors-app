@@ -1,4 +1,4 @@
-## STEPS TO BUILD THE COLOR PALETTE APP
+## STEPS TO BUILDING THE COLOR PALETTE APP
 ---------------
 
 - Install create-react-app: `npx create-react-app react-colors-app`
@@ -23,7 +23,7 @@
   - Create changeLevel function to update state with the newLevel received from Navbar component(child). Pass this as props down to Navbar component
   - Render the Navbar component. Props passed to Navbar component: level, changeLevel
   - `<Navbar level={level} changeLevel={this.changeLevel} />`
-- Create the ColorBox component
+- Create the ColorBox.js component
   - Being rendered in Palette.js
   - Props received: `this.props.background` & `this.props.name`
   - Render the background color and name of color
@@ -38,7 +38,7 @@
 - Add color slider (at first in Palette comp, then move it to Navbar comp)
   - Use rc-slider library
   - Style the slider. And override default styles
-- Create Navbar component
+- Create Navbar.js component
   - Being rendered in Palette.js
   - Props received: `const { level, changeLevel } = this.props;`
   - Render the logo, level text, and slider
@@ -57,8 +57,13 @@
   - Style Snackbar
 - Add footer to the Palette component
   - Style the footer
-- Integrate React Router
-
+- Integrate React Router. In index.js and App.js files
+- Create a PaletteList.js component
+  - This page displays a list of palettes in mini-size. When clicked, it'll go to that  individual palette page
+  - Being rendered in App.js
+  - Props received: `const { palettes } = this.props`
+  - map over the palletes(coming from seedColors), for each palette display the paletteName and make it as a router link
+  - The 'to' path takes in the palette id.
 
 
 
@@ -106,6 +111,8 @@
 		<Route exact path='/palette/:id' render={() => <h1>individual paletteh1>} />
   </Switch>
   ```
+- Import in PaletteList.js: `import { Link } from 'react-router-dom'`
+- Use: `<Link to={`/palette/${palette.id}`}>{palette.paletteName}</Link>`
 
 
 
