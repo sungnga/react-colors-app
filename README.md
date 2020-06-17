@@ -55,6 +55,11 @@
 - Create Snackbar letting user know what they've changed format. Do this in Navbar component
   - Use Material UI Snackbar, IconButton, and CloseIcon component
   - Style Snackbar
+- Add footer to the Palette component
+  - Style the footer
+- Integrate React Router
+
+
 
 
 ## Libraries Used
@@ -89,7 +94,18 @@
   - `import IconButton from '@material-ui/core/IconButton';`
   - `import CloseIcon from '@material-ui/icons/Close';`
 
-
+### React Router
+- Install: `npm install react-router-dom`
+- Import in index.js file: `import { BrowserRouter } from 'react-router-dom'`
+- Use: `<BrowserRouter><App /></BrowserRouter>`
+- Import in App.js: `import {Route, Switch} from 'react-router-dom'`
+- Use:
+  ```javascript
+  <Switch>
+		<Route exact path='/' render={() => <h1>Palette list goes here</h1>} />
+		<Route exact path='/palette/:id' render={() => <h1>individual paletteh1>} />
+  </Switch>
+  ```
 
 
 
