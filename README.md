@@ -15,7 +15,10 @@
 - Create the ColorBox component
   - Rendered in Palette.js. Props: `this.props.background` & `this.props.name`
   - Render the background color and name of color
-
+  - Style ColorBox comp
+- Copy color to clipboard. Use copy-to-clipboard library
+- Copy color overlay animation. Style the overlay
+- Create color helper function to generate a range of shades of a color
 
 
 
@@ -26,6 +29,24 @@
 - Install: `npm install --save react-copy-to-clipboard`
 - Import in ColorBox.js: `import { CopyToClipboard } from 'react-copy-to-clipboard';`
 - Use: `<CopyToClipboard text={background}>...</CopyToClipboard>`
+
+### Chroma-js
+- Source: https://www.npmjs.com/package/chroma-js
+- Install: `npm install chroma-js`
+- Import in colorHelpers.js: `import chroma from 'chroma-js'`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
