@@ -1,28 +1,61 @@
-### STEPS TO BUILD THE COLOR PALETTE PROJECT
+## STEPS TO BUILD THE COLOR PALETTE APP
+---------------
+
 - Install create-react-app: `npx create-react-app react-colors-app`
 - In the App.js file:
   - Render the Palette component
-  - pass in as props(spread in) the seedColors (coming from seedColors.js) in the Palette component 
+  - Pass props to Palette comp: `palette={generatePalette(seedColors[4])}`
+  - `<Palette palette={generatePalette(seedColors[4])} />`
+  - Import the seedColors.js file. This is the starter color palettes
 - Create a Palette.js component
-  - Rendered in App.js. Props: `this.props.colors`
-  - map over the seedColor props and for each color, extract the color and color name and pass it to ColorBox component as props
+  - Being rendered in App.js
+  - Props received: `this.props.palette`
+  - map over the seedColor palette colors and for each color, extract the color and color name and pass it to ColorBox component as props
   - Render the ColorBox component after mapping over each color
   ```javascript
-  const colorBoxes = this.props.colors.map(color => (
-      <ColorBox background={color.color} name={color.name} />
-  ))
+	const { colors } = this.props.palette;
+	const colorBoxes = colors[level].map((color) => (
+		<ColorBox key={color.hex} background={color.hex} name={color.name} />
+	));
   ```
+  - Props passed to ColorBox component: background, name
+  - Create state to keep track of the currently selected level
+  - Create changeLevel function to update state with the newLevel received from Navbar component(child). Pass this as props down to Navbar component
+  - Render the Navbar component. Props passed to Navbar component: level, changeLevel
+  - `<Navbar level={level} changeLevel={this.changeLevel} />`
 - Create the ColorBox component
-  - Rendered in Palette.js. Props: `this.props.background` & `this.props.name`
+  - Being rendered in Palette.js
+  - Props received: `this.props.background` & `this.props.name`
   - Render the background color and name of color
-  - Style ColorBox comp
-- Copy color to clipboard. Use copy-to-clipboard library
-- Copy color overlay animation. Style the overlay
+  - Add style
+- Add copy color to clipboard functionality. Do this in ColorBox component
+  - Use copy-to-clipboard library
+  - Animate the copy color overlay
+  - Style the overlay
 - Create color helper function to generate a range of shades of a color
+  - colorHelpers.js
+  - Use it in App.js
+- Add color slider (at first in Palette comp, then move it to Navbar comp)
+  - Use rc-slider library
+  - Style the slider. And override default styles
+- Create Navbar component
+  - Being rendered in Palette.js
+  - Props received: `const { level, changeLevel } = this.props;`
+  - Render the logo, level text, and slider
+  - Add style
+- Create the select format dropdown menu. Do this in Navbar component
+  - Using Material-UI library: Select and MenuItem components
+  - Create a controlled component of the Navbar to keep track of the changes of the format
+    - When a new format is selected in the Select component in Navbar, the format state in Navbar will be synced with the new format
+    - In the parent component(Palette) is also keeping track of the format state
+    - When there's a new format, this format will also get passed to the parent component(Navbar to Palette): `this.props.handleChange(e.target.value);`
+    - Set the value attribute of the Select comp to be the current state format
+    - `<Select value={this.state.format} onChange={this.handleChange}>`
+  - Now when a new format is selected(hex, rgb, or rgba), all the color boxes rendered in Palette component will be updated with that format
 
 
 
-# Libraries
+## Libraries Used
 ---------------
 
 ### Copy to clipboard
@@ -38,9 +71,15 @@
 ### rc-slider
 - Source: https://www.npmjs.com/package/rc-slider
 - Install: `npm install rc-slider`
-- Import in Palette.js: `import Slider from 'rc-slider'` and `import 'rc-slider/assets/index.css';`
+- Import in Navbar.js: `import Slider from 'rc-slider'` and `import 'rc-slider/assets/index.css';`
+- NOTE: ORDER OF IMPORT IS IMPORTANT!
+- To override the default styles, import your style file AFTER the vendor style file
 
-
+### Material-UI
+- Install: `npm install @material-ui/core`
+- Import in Navbar.js:
+  - The Select component: `import Select from '@material-ui/core/Select'`
+  - The MenuItem component: `import MenuItem from '@material-ui/core/MenuItem';`
 
 
 
