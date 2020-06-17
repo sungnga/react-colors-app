@@ -52,7 +52,9 @@
     - Set the value attribute of the Select comp to be the current state format
     - `<Select value={this.state.format} onChange={this.handleChange}>`
   - Now when a new format is selected(hex, rgb, or rgba), all the color boxes rendered in Palette component will be updated with that format
-
+- Create Snackbar letting user know what they've changed format. Do this in Navbar component
+  - Use Material UI Snackbar, IconButton, and CloseIcon component
+  - Style Snackbar
 
 
 ## Libraries Used
@@ -76,10 +78,16 @@
 - To override the default styles, import your style file AFTER the vendor style file
 
 ### Material-UI
+- Source: https://material-ui.com/
 - Install: `npm install @material-ui/core`
-- Import in Navbar.js:
+- Import in Navbar.js to create select format menu:
   - The Select component: `import Select from '@material-ui/core/Select'`
   - The MenuItem component: `import MenuItem from '@material-ui/core/MenuItem';`
+- Install: `npm install @material-ui/icons`
+- Import in Navbar.js to create snackbar functionality:
+  - `import Snackbar from '@material-ui/core/Snackbar';`
+  - `import IconButton from '@material-ui/core/IconButton';`
+  - `import CloseIcon from '@material-ui/icons/Close';`
 
 
 
