@@ -35,7 +35,10 @@
 - Install: `npm install chroma-js`
 - Import in colorHelpers.js: `import chroma from 'chroma-js'`
 
-
+### rc-slider
+- Source: https://www.npmjs.com/package/rc-slider
+- Install: `npm install rc-slider`
+- Import in Palette.js: `import Slider from 'rc-slider'` and `import 'rc-slider/assets/index.css';`
 
 
 
