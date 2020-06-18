@@ -67,6 +67,8 @@
 - Create a MiniPalette.js functional component
   - Being rendered in PaletteList.js
   - This is a Higher Order Component(HOC)
+  - Use Material UI styles library (withStyles HOC) to style the component right inside the component file
+- Style the PaletteList.js component using Material UI withStyles HOC library
 
 
 ## Libraries Used
@@ -119,7 +121,8 @@
 ### Material UI Styles
 - Source: https://material-ui.com/styles/basics/
 - Install: `npm install @material-ui/styles`
-- Import withStyles HOC in MiniPalatte.js: `import { withStyles } from '@material-ui/core/styles';`
+- Import withStyles HOC in MiniPalatte.js, PaletteList.js: `import { withStyles } from '@material-ui/core/styles';`
+- Use: `export default withStyles(styles)(MiniPalette);`
 
 
 
