@@ -64,7 +64,9 @@
   - Props received: `const { palettes } = this.props`
   - map over the palletes(coming from seedColors), for each palette display the paletteName and make it as a router link
   - The 'to' path takes in the palette id.
-
+- Create a MiniPalette.js functional component
+  - Being rendered in PaletteList.js
+  - This is a Higher Order Component(HOC)
 
 
 ## Libraries Used
@@ -114,6 +116,10 @@
 - Import in PaletteList.js: `import { Link } from 'react-router-dom'`
 - Use: `<Link to={`/palette/${palette.id}`}>{palette.paletteName}</Link>`
 
+### Material UI Styles
+- Source: https://material-ui.com/styles/basics/
+- Install: `npm install @material-ui/styles`
+- Import withStyles HOC in MiniPalatte.js: `import { withStyles } from '@material-ui/core/styles';`
 
 
 
