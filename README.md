@@ -83,6 +83,12 @@
     - Include the changeFormat function to update the state if the format is changed
     - When rendering the color shades(using ColorBox), attach the current format to the color: `background={color[this.state.format]}`
   - Add Navbar (hide the slider and level) and Footer. So render these two components
+  - Add GoBack link using Link. It takes you back to the color palette. Style the link
+- Create a functional footer PaletteFooter.js component
+  - Being rendered in Palette.js and SingleColorPalette.js
+  - Props received: `const {paletteName, emoji} = this.props.palette`
+  - Renders the palette name and the emoji
+
 
 
 
@@ -127,7 +133,7 @@
   ```javascript
   <Switch>
 		<Route exact path='/' render={() => <h1>Palette list goes here</h1>} />
-		<Route exact path='/palette/:id' render={() => <h1>individual paletteh1>} />
+		<Route exact path='/palette/:id' render={() => <h1>individual palette</h1>} />
   </Switch>
   ```
 - Import in PaletteList.js: `import { Link } from 'react-router-dom'`
