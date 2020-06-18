@@ -71,8 +71,13 @@
 - Style the PaletteList.js component using Material UI withStyles HOC library
 - Create SingleColorPalette.js component
   - Being rendered in App.js
+  - Receive another props, colorId, from App.js
   - Add a Link to this SingleColorPalette page in ColorBox.js component in the 'More' text
   - Construct the 'moreUrl' path with the PaletteId and the colorId in Palette.js component. Pass this props down to ColorBox component and use it in the Link 'to' path
+  - Display shades of that particular color
+    - Create a helper function to gather all shades of the matching color id
+    - Map over the shades array and render each shade using ColorBox component
+    - Write conditional logic to hide the 'moreUrl' link in ColorBox.js
 
 
 ## Libraries Used
