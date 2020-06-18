@@ -78,6 +78,12 @@
     - Create a helper function to gather all shades of the matching color id
     - Map over the shades array and render each shade using ColorBox component
     - Write conditional logic to hide the 'moreUrl' link in ColorBox.js
+  - When copy color to clipboard, set the correct format(hex, rgb, or rgba)
+    - Create state to keep track of the format state
+    - Include the changeFormat function to update the state if the format is changed
+    - When rendering the color shades(using ColorBox), attach the current format to the color: `background={color[this.state.format]}`
+  - Add Navbar (hide the slider and level) and Footer. So render these two components
+
 
 
 ## Libraries Used
