@@ -88,7 +88,9 @@
   - Being rendered in Palette.js and SingleColorPalette.js
   - Props received: `const {paletteName, emoji} = this.props.palette`
   - Renders the palette name and the emoji
-
+- Adjust text color based on text's luminance
+  - Use chroma-js library
+  - Do this in ColorBox.js component
 
 
 
