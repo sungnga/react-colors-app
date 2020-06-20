@@ -96,9 +96,11 @@
   - Pass classes as props to the component
   - Use conditionals to display texts and 'more' link in light or dark color depending on the luminance of the background color
 - Refactor Palette.js and SingleColorPalette.js styles
+- Refactor PaletteFooter.js, PaletteList.js, MiniPalette.js styles
 - Move out styles for all components into a new styles folder
   - Each component has its own stylesheet of the same name and the word 'Styles' added: `ColorBoxStyles.js`
   - Import the stylesheet in the component: `import styles from './styles/ColorBoxStyles'`
+- Refactor Navbar.js styles and remove CSS files
 
 
 ## Libraries Used
