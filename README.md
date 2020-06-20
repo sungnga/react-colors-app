@@ -91,7 +91,10 @@
 - Adjust text color based on text's luminance
   - Use chroma-js library
   - Do this in ColorBox.js component
-
+- Refactor styles of ColorBox component using Material UI Styles (withStyles)
+  - All styles for ColorBox now live in the component
+  - Pass classes as props to the component
+  - Use conditionals to display texts and 'more' link in light or dark color depending on the luminance of the background color
 
 
 ## Libraries Used

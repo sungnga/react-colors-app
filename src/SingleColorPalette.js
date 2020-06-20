@@ -17,6 +17,7 @@ class SingleColorPalette extends Component {
 	gatherShades(palette, colorToFilterBy) {
 		let shades = [];
 		let allColors = palette.colors;
+
 		for (let key in allColors) {
 			shades = shades.concat(
 				allColors[key].filter((color) => color.id === colorToFilterBy)
@@ -36,7 +37,7 @@ class SingleColorPalette extends Component {
 				key={color.name}
 				name={color.name}
 				background={color[this.state.format]}
-				showLink={false}
+				showingFullPalette={false}
 			/>
 		));
 		return (
