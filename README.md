@@ -101,6 +101,9 @@
   - Each component has its own stylesheet of the same name and the word 'Styles' added: `ColorBoxStyles.js`
   - Import the stylesheet in the component: `import styles from './styles/ColorBoxStyles'`
 - Refactor Navbar.js styles and remove CSS files
+- CREATE NEW PALETTE FORM. NewPaletteForm.js component
+  - Being rendered in App.js in a Route
+  - Create a Link to the NewPaletteForm page in PaletteList.js component and style link
 
 
 ## Libraries Used
