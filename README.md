@@ -104,6 +104,8 @@
 - CREATE NEW PALETTE FORM. NewPaletteForm.js component
   - Being rendered in App.js in a Route
   - Create a Link to the NewPaletteForm page in PaletteList.js component and style link
+  - Add Drawer functionality using Material UI Persistent Drawer
+
 
 
 ## Libraries Used
