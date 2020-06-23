@@ -113,6 +113,20 @@
     - Clear Palette, Random Color, and Add Color
     - Import: `import Button from '@material-ui/core/Button'`
     - Use: `<Button variant='contained' color='primary'>Add Color</Button>`
+  - Connect color picker to button
+    - Set 'Add Color' button's backgroundColor to be the currentColor
+    - Write a function (updateCurrentColor) that updates the currentColor to the newColor
+      - This function receives the new color data coming from the ChromePicker component's onChangeComplete attribute. Call it newColor
+      - Set the currentColor state to be the newColor (in hex)
+      - Call this function in the ChromePicker component
+    - The backgroundColor of the 'Add Color' button should now update with the newColor
+    - Add the newColor to the array of colors when the 'Add Color' is clicked
+      - Create a state for an array of colors. This keeps track of the current list of colors
+      - Write a function (addNewColor) that adds the newColor to colors list
+        - Call this function in the 'Add Color' button
+    - Display the list of colors in the main container
+      - Map over the colors list and display each color in a list form
+      - Set the style backgroundColor for each color
 
 
 
