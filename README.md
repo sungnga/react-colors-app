@@ -105,6 +105,14 @@
   - Being rendered in App.js in a Route
   - Create a Link to the NewPaletteForm page in PaletteList.js component and style link
   - Add Drawer functionality using Material UI Persistent Drawer
+  - Add ChromePicker component (color picker) to Drawer
+    - Install React Color component: `npm install react-color`
+    - Import: `import { ChromePicker } from 'react-color'`
+    - Use: `<ChromePicker />`
+  - Add 3 buttons to Drawer using Material UI: 
+    - Clear Palette, Random Color, and Add Color
+    - Import: `import Button from '@material-ui/core/Button'`
+    - Use: `<Button variant='contained' color='primary'>Add Color</Button>`
 
 
 
@@ -160,6 +168,10 @@
 - Install: `npm install @material-ui/styles`
 - Import withStyles HOC in MiniPalatte.js, PaletteList.js: `import { withStyles } from '@material-ui/core/styles';`
 - Use: `export default withStyles(styles)(MiniPalette);`
+
+### React Color
+- Install: `npm install react-color`
+- Import in NewPaletteForm.js: `import {ChromePicker} from 'react-color'`
 
 
 
