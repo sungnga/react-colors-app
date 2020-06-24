@@ -131,7 +131,14 @@
     - Being rendered in NewPaletteForm.js
     - props received: `<DraggableColorBox color={color} />`
     - render each color, give the backgroundColor style, and style the color box
-
+  - Add Material UI form validator
+    - Install the library and import in NewPaletteForm.js
+    - Create a state to keep track of the text input coming from `<TextValidator />`
+      - add a handleChange method to sync up the newName state
+    - Add validator rules to the ValidatorForm component. Do this in a `componentDidMount()` method
+      - check to make sure user enters a color name
+      - check to see if the color name is unique
+      - check to see if the color is unique
 
 
 ## Libraries Used
@@ -191,8 +198,9 @@
 - Install: `npm install react-color`
 - Import in NewPaletteForm.js: `import {ChromePicker} from 'react-color'`
 
-
-
+### react-material-ui-form-validator
+- Install: `npm install react-material-ui-form-validator`
+- Import in NewPaletteForm.js: `import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'`
 
 
 
