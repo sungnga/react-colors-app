@@ -124,9 +124,13 @@
       - Create a state for an array of colors. This keeps track of the current list of colors
       - Write a function (addNewColor) that adds the newColor to colors list
         - Call this function in the 'Add Color' button
-    - Display the list of colors in the main container
-      - Map over the colors list and display each color in a list form
-      - Set the style backgroundColor for each color
+  - Display the list of colors in the main container
+    - Map over the colors list and display each color in a list form
+    - Set the style backgroundColor for each color
+  - Create a DraggableColorBox.js functional component
+    - Being rendered in NewPaletteForm.js
+    - props received: `<DraggableColorBox color={color} />`
+    - render each color, give the backgroundColor style, and style the color box
 
 
 
