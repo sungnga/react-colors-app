@@ -87,7 +87,8 @@ class NewPaletteForm extends Component {
 		};
 		this.updateCurrentColor = this.updateCurrentColor.bind(this);
 		this.addNewColor = this.addNewColor.bind(this);
-		this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
 	}
 	componentDidMount() {
 		ValidatorForm.addValidationRule('isColorNameUnique', (value) =>
@@ -98,8 +99,8 @@ class NewPaletteForm extends Component {
 		ValidatorForm.addValidationRule('isColorUnique', (value) =>
 			this.state.colors.every(({ color }) => color !== this.state.currentColor)
 		);
-  }
-  
+	}
+
 	handleDrawerOpen = () => {
 		this.setState({ open: true });
 	};
@@ -120,7 +121,19 @@ class NewPaletteForm extends Component {
 	}
 	handleChange(evt) {
 		this.setState({ newName: evt.target.value });
-	}
+  }
+  handleSubmit() {
+    let newName = 'New Test Palette'
+    const newPalette = {
+      paletteName: newName,
+      id: newName.toLowerCase().replace(/ /g, '-'),
+      colors: this.state.colors
+    }
+    this.props.savePalette(newPalette)
+    // Redirect to the main page after palette is saved
+    this.props.history.push('/')
+  }
+
 	render() {
 		const { classes } = this.props;
 		const { open, currentColor, newName } = this.state;
@@ -146,6 +159,13 @@ class NewPaletteForm extends Component {
 						<Typography variant='h6' color='inherit' noWrap>
 							Persistent drawer
 						</Typography>
+						<Button
+							variant='contained'
+							color='primary'
+							onClick={this.handleSubmit}
+						>
+							Save Palette
+						</Button>
 					</Toolbar>
 				</AppBar>
 				<Drawer
@@ -184,8 +204,8 @@ class NewPaletteForm extends Component {
 							validators={['required', 'isColorNameUnique', 'isColorUnique']}
 							errorMessages={[
 								'Enter a color name',
-                'Color name must be unique',
-                'Color already used!'
+								'Color name must be unique',
+								'Color already used!'
 							]}
 						/>
 						<Button

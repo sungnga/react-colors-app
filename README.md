@@ -139,6 +139,12 @@
       - check to make sure user enters a color name
       - check to see if the color name is unique
       - check to see if the color is unique
+  - Saving new palettes
+    - Create a 'Save Palette' button
+    - Add an onClick event function that will trigger the savePalette() function that was passed as props from the App component: `this.props.savePalette(newPalette)`
+    - Inside the handleSubmit() function, create a newPalette object with its properties. This object will get passed up the chain to the parent component(App.js) when onClick event is triggered
+    - Once the newPalette is saved, redirect user back to the main page
+    - In the App.js component, the savePalette() function will concatinate the newPalette to the current palette list
 
 
 ## Libraries Used
