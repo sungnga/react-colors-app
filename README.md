@@ -151,6 +151,7 @@
     - To save a unique palette name, we need access to all the palette names
       - in App.js, need to pass down palettes as a prop to the NewPaletteForm component: `palettes={this.state.palettes`
       - then add a ValidatorForm rule in componentDidMount() method in NewPaletteForm component
+  - Style the DraggableColorBox component and add delete icon
 
 
 ## Libraries Used

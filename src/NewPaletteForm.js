@@ -214,7 +214,7 @@ class NewPaletteForm extends Component {
 						color={currentColor}
 						onChangeComplete={this.updateCurrentColor}
 					/>
-					<ValidatorForm onSubmit={this.addNewColor}>
+					<ValidatorForm onSubmit={this.addNewColor} ref='form'>
 						<TextValidator
 							value={newColorName}
 							name='newColorName'
@@ -230,7 +230,7 @@ class NewPaletteForm extends Component {
 							variant='contained'
 							type='submit'
 							color='primary'
-							style={{ backgroundColor: this.state.currentColor }}
+							style={{ backgroundColor: currentColor }}
 						>
 							Add Color
 						</Button>
