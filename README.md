@@ -145,6 +145,12 @@
     - Inside the handleSubmit() function, create a newPalette object with its properties. This object will get passed up the chain to the parent component(App.js) when onClick event is triggered
     - Once the newPalette is saved, redirect user back to the main page
     - In the App.js component, the savePalette() function will concatinate the newPalette to the current palette list
+  - Add new palette name form and apply ValidatorForm rules
+    - Check to make sure a palette name is provided
+    - Check to make sure the palette name is unique
+    - To save a unique palette name, we need access to all the palette names
+      - in App.js, need to pass down palettes as a prop to the NewPaletteForm component: `palettes={this.state.palettes`
+      - then add a ValidatorForm rule in componentDidMount() method in NewPaletteForm component
 
 
 ## Libraries Used
