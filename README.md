@@ -155,6 +155,13 @@
   - Adding the color box delete functionality
     - Add an onClick event in the `<DeleteIcon onClick={this.props.handleClick} />` in DraggableColorBox.js. Call the handleClick function that gets passed down from the parent component
     - In the parent component(NewPaletteForm.js), write a removeColor() function that filters out(removes) the given color name from the current color list
+- Drag and drop functionality
+  - Create a functional component called DraggableColorList.js
+    - Being rendered in NewPaletteForm.js. Note that this is replacing the DraggableColorBox.js component
+    - In the DraggableColorList component, map over colors list and render each color as <DraggableColorBox /> instance 
+
+
+
 
 ## Libraries Used
 ---------------
@@ -217,6 +224,11 @@
 - Install: `npm install react-material-ui-form-validator`
 - Import in NewPaletteForm.js: `import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'`
 
+### Drag and Drop: react-sortable-hoc
+- Install: `npm install react-sortable-hoc`
+- Import in DraggableColorList.js: `import {SortableContainer} from 'react-sortable-hoc'`
+- Import in DraggableColorBox.js: `import { SortableElement } from 'react-sortable-hoc';`
+- Import in NewPaletteForm.js: `import { arrayMove } from 'react-sortable-hoc'`
 
 
 
