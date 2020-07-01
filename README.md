@@ -158,9 +158,11 @@
 - Drag and drop functionality
   - Create a functional component called DraggableColorList.js
     - Being rendered in NewPaletteForm.js. Note that this is replacing the DraggableColorBox.js component
-    - In the DraggableColorList component, map over colors list and render each color as <DraggableColorBox /> instance 
-
-
+    - In the DraggableColorList component, map over colors list and render each color as <DraggableColorBox /> instance
+- Add clear palette and random color buttons in NewPalette.js component
+  - To clear the palette: create clearColors() method to set the colors state to an empty array
+  - To generate a random color: create addRandomColor() method that generate a random color from existing palettes and add the randomColor to the colors state
+  - Write a condition to check if palette is full
 
 
 ## Libraries Used
