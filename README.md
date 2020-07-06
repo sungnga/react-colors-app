@@ -149,7 +149,7 @@
     - Check to make sure a palette name is provided
     - Check to make sure the palette name is unique
     - To save a unique palette name, we need access to all the palette names
-      - in App.js, need to pass down palettes as a prop to the NewPaletteForm component: `palettes={this.state.palettes`
+      - in App.js, need to pass down palettes as a prop to the NewPaletteForm component: `palettes={this.state.palettes}`
       - then add a ValidatorForm rule in componentDidMount() method in NewPaletteForm component
   - Style the DraggableColorBox component and add the delete icon
   - Adding the color box delete functionality
@@ -158,11 +158,18 @@
 - Drag and drop functionality
   - Create a functional component called DraggableColorList.js
     - Being rendered in NewPaletteForm.js. Note that this is replacing the DraggableColorBox.js component
-    - In the DraggableColorList component, map over colors list and render each color as <DraggableColorBox /> instance
+    - In the DraggableColorList component, map over colors list and render each color as `<DraggableColorBox />` instance
 - Add clear palette and random color buttons in NewPalette.js component
   - To clear the palette: create clearColors() method to set the colors state to an empty array
   - To generate a random color: create addRandomColor() method that generate a random color from existing palettes and add the randomColor to the colors state
   - Write a condition to check if palette is full
+- Refactor nav to its own component
+  - Create a stateful nav component: PaletteFormNav.js
+  - Being rendered in NewPaletteForm.js component
+- Refactor colorPicker to its own component
+  - Create a stateful color picker component: ColorPickerForm.js
+  - Being rendered in NewPaletteForm.js component
+  
 
 
 ## Libraries Used
