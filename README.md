@@ -176,6 +176,12 @@
   - The 'Save Palette Name' button is now in the Dialog
   - Move the TextValidator, ValidatorForm, componentDidMount, and handleChange to here
 - Style PaletteMetaForm.js and the Dialog
+- Fix the Form Dialog and add emoji-mart picker
+  - Using emoji-mart npm package
+  - import the Picker component and css file in PaletteMetaForm.js component
+
+
+
 
 ## Libraries Used
 ---------------
@@ -244,6 +250,10 @@
 - Import in DraggableColorBox.js: `import { SortableElement } from 'react-sortable-hoc';`
 - Import in NewPaletteForm.js: `import { arrayMove } from 'react-sortable-hoc'`
 
+### emoji-mart
+- Install: `npm install emoji-mart`
+- Import the Picker component in PaletteMetaForm.js: `import {Picker} from 'emoji-mart'`
+- Import the css: `import 'emoji-mart/css/emoji-mart.css'`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
