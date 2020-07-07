@@ -170,6 +170,11 @@
   - Create a stateful color picker component: ColorPickerForm.js
   - Being rendered in NewPaletteForm.js component
 - Style ColorPickerForm.js
+- Add PaletteMetaForm.js component and dialog
+  - Being rendered in PaletteFormNav.js component
+  - Use the Material UI Dialog library
+  - The 'Save Palette Name' button is now in the Dialog
+  - Move the TextValidator, ValidatorForm, componentDidMount, and handleChange to here
 
 
 ## Libraries Used
