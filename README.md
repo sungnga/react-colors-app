@@ -169,7 +169,7 @@
 - Refactor colorPicker to its own component
   - Create a stateful color picker component: ColorPickerForm.js
   - Being rendered in NewPaletteForm.js component
-  
+- Style ColorPickerForm.js
 
 
 ## Libraries Used
