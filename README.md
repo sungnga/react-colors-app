@@ -181,6 +181,7 @@
   - import the Picker component and css file in PaletteMetaForm.js component
   - In the Picker instance, when an emoji is selected, savePalette() method is called. This adds an emoji property to the newPalette object. This newPalette object is then passed to the parent component(NewPaletteForm.js) via the handleSubmit() props method
   - The emoji is now included when a palette is saved
+- Move JSS styles out and add constants file
 
 
 
