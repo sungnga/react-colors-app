@@ -204,6 +204,9 @@
     - DraggableColorBoxStyles.js
     - NavbarStyles.js
     - PaletteFormNavStyles.js
+  - Make PaletteList responsive
+    - PaletteListStyles.js
+    - Add an additional breakpoint: sizes.js
 
 
 ## Libraries Used
