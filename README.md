@@ -196,6 +196,7 @@
 - Add responsive helper and style ColorBox
   - Create a sizes.js helper that defines different media query breakpoints
   - Import this helper in ColorBoxStyles.js to style ColorBox at different screen sizes
+  - Make ColorBox responsive by changing the width and height at different media query breakpoints
 
 
 ## Libraries Used
