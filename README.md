@@ -183,6 +183,10 @@
   - The emoji is now included when a palette is saved
 - Move JSS styles out and add constants file
 - Tweak styles of palette form: replace menu icon, remove extra padding, hide icon when drawer is open
+- Save palettes to localStorage
+  - Do this in App.js
+  - Create the syncLocalStorage() method to save the palettes to local storage
+  - Inside savePalette() method, after state is updated, call the syncLocalStorage() method as callback
 
 
 
