@@ -193,10 +193,17 @@
     - Pass down this deletePalette() as props to PaletteList component
     - In PaletteList.js, pass down handleDelete function and the palette id as props to the MiniPalette component
     - In MiniPalette.js, when the deleteIcon is clicked, call the deletePalette() function which triggers the `this.props.handleDelete(this.props.id)` function
-- Add responsive helper and style ColorBox
-  - Create a sizes.js helper that defines different media query breakpoints
+- Media queries in JSS Styles:
+  - Add a responsive helper
+    - Create a sizes.js helper that defines different media query breakpoints
   - Import this helper in ColorBoxStyles.js to style ColorBox at different screen sizes
   - Make ColorBox responsive by changing the width and height at different media query breakpoints
+    - ColorBoxStyles.js
+    - PaletteStyles.js
+  - Make form and navbar responsive
+    - DraggableColorBoxStyles.js
+    - NavbarStyles.js
+    - PaletteFormNavStyles.js
 
 
 ## Libraries Used
