@@ -187,7 +187,7 @@
   - Do this in App.js
   - Create the syncLocalStorage() method to save the palettes to local storage
   - Inside savePalette() method, after state is updated, call the syncLocalStorage() method as callback
-
+- Add deleteIcon to MiniPalette.js and add styles to it
 
 
 ## Libraries Used
