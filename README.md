@@ -212,6 +212,9 @@
   - Click the "download svg" button to download the svg code
   - Create a bg.svg file inside the styles directory and paste the code in here
   - Import the background svg file and use it in PaletteListStyles.js
+- Add animation to MiniPalette deletion using React Transition Group library
+  - Install and import in PaletteList.js
+  - Add styles in PaletteListStyles.js
 
 
 
@@ -289,6 +292,18 @@
 
 ### SVG backgrounds
 - Source: www.svgbackgrounds.com
+- Generate the background SVG at www.svgbackgrounds.com
+- Click the "download svg" button to download the svg code
+- Create a bg.svg file inside the styles directory and paste the code in here
+- Import the bg svg file in PaletteListStyles.js: `import bg from './bg.svg'`
+- To use: `backgroundImage: `url(${bg})``
+
+### React Transition Group
+- Install: `npm install react-transition-group`
+- Import in PaletteList.js: `import { CSSTransition, TransitionGroup } from 'react-transition-group'`
+- Add styles in PaletteListStyles.js
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
