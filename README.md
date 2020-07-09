@@ -207,6 +207,12 @@
   - Make PaletteList responsive
     - PaletteListStyles.js
     - Add an additional breakpoint: sizes.js
+- Add background SVG to PaletteListStyles.js
+  - Generate the background SVG at www.svgbackgrounds.com
+  - Click the "download svg" button to download the svg code
+  - Create a bg.svg file inside the styles directory and paste the code in here
+  - Import the background svg file and use it in PaletteListStyles.js
+
 
 
 ## Libraries Used
@@ -280,6 +286,9 @@
 - Install: `npm install emoji-mart`
 - Import the Picker component in PaletteMetaForm.js: `import {Picker} from 'emoji-mart'`
 - Import the css: `import 'emoji-mart/css/emoji-mart.css'`
+
+### SVG backgrounds
+- Source: www.svgbackgrounds.com
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
