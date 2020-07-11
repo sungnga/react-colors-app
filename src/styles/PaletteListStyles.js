@@ -17,14 +17,15 @@ export default {
 		alignItems: 'flex-start',
 		justifyContent: 'center',
 		/* background by SVGBackgrounds.com */
-		backgroundColor: '#3a6c97',
+		backgroundColor: '#dfede5',
 		backgroundImage: `url(${bg})`,
 		overflow: 'scroll',
 		paddingBottom: '1rem'
 	},
 	heading: {
 		fontSize: '2rem',
-		margin: '1rem 0'
+		margin: '1rem 0',
+		color: '#444444'
 	},
 	container: {
 		width: '50%',
@@ -44,10 +45,11 @@ export default {
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		width: '100%',
-		color: 'white',
-		'& a': {
+		fontWeight: 700,
+		color: '#444444',
+		'& a, visited': {
 			textDecoration: 'none',
-			color: 'white'
+			color: '#444444'
 		}
 	},
 	palettes: {
