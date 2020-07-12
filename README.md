@@ -217,6 +217,8 @@
   - Add styles in PaletteListStyles.js
 - Add delete confirmation dialog to delete a MiniPalette
   - Use Material UI components: List, Avatar and Icons
+- Add basic route transition using react-transition-group
+  - Do this in App.js
 
 
 
