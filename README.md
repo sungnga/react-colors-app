@@ -219,6 +219,10 @@
   - Use Material UI components: List, Avatar and Icons
 - Add basic route transition using react-transition-group
   - Do this in App.js
+- Refactoring Route transitions
+  - Create a functional component called Page.js
+  - Render the Page component in App.js where each component in the Route is wrapped inside the Page component
+  - Create a separate css page to style the Page component, Page.css
 
 
 
