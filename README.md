@@ -215,6 +215,8 @@
 - Add animation to MiniPalette deletion using React Transition Group library
   - Install and import in PaletteList.js
   - Add styles in PaletteListStyles.js
+- Add delete confirmation dialog to delete a MiniPalette
+  - Use Material UI components: List, Avatar and Icons
 
 
 
