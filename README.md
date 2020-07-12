@@ -223,6 +223,12 @@
   - Create a functional component called Page.js
   - Render the Page component in App.js where each component in the Route is wrapped inside the Page component
   - Create a separate css page to style the Page component, Page.css
+- Optimizing with PureComponent
+  - Every time we delete a MiniPalette, it causes the list of palettes in PaletteList to be re-rendered
+  - To solve this issue, inside MiniPalette.js component, use extends PureComponent instead of extends Component
+  - Also, whenever we use an inline arrow function in render(), it creates a new function everytime render() is called
+  - Because of this, it causes the PaletteList to be re-rendered
+  - To solve this problem, change the handleClick arrow function to be a separate function and pass it down as props to MiniPalette component
 
 
 
