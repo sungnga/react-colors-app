@@ -229,7 +229,8 @@
   - Also, whenever we use an inline arrow function in render(), it creates a new function everytime render() is called
   - Because of this, it causes the PaletteList to be re-rendered
   - To solve this problem, change the handleClick arrow function to be a separate function and pass it down as props to MiniPalette component
-
+- Cleaning things up
+  - Fix navbar slider side and add classnames to ColorBox component
 
 
 ## Libraries Used

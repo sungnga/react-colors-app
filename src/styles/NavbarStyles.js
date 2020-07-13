@@ -26,7 +26,7 @@ export default {
 	},
 	slider: {
 		width: '340px',
-		margin: '0 15px',
+		margin: '0px 10px',
 		display: 'inline-block',
 		'& .rc-slider-rail': {
 			height: '8px'
@@ -44,12 +44,12 @@ export default {
 		'& .rc-slider-track': {
 			backgroundColor: 'transparent'
 		},
-		[sizes.down('md')]: {
+		[sizes.down('sm')]: {
 			width: '150px'
 		}
 	},
 	selectContainer: {
 		marginLeft: 'auto',
-		marginRight: '15px'
+		marginRight: '1rem'
 	}
 };
