@@ -232,6 +232,9 @@
 - Cleaning things up
   - Fix navbar slider side and add classnames to ColorBox component
   - Clean up all files
+  - Fix issues with ValidatorForm in ColorPickerForm.js to not validate the color right away
+  - Fix issues with NewPaletteForm when all MiniPalettes are deleted
+  - Add chroma to DraggableColorBoxStyle.js based on the color luminance
 
 
 ## Libraries Used
