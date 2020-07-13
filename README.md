@@ -1,5 +1,4 @@
 ## STEPS TO BUILDING THE COLOR PALETTE APP
----------------
 
 - Install create-react-app: `npx create-react-app react-colors-app`
 - In the App.js file:
@@ -235,10 +234,12 @@
   - Fix issues with ValidatorForm in ColorPickerForm.js to not validate the color right away
   - Fix issues with NewPaletteForm when all MiniPalettes are deleted
   - Add chroma to DraggableColorBoxStyle.js based on the color luminance
+  - With 404 page, redirect user to main palette page
+  - Prevent duplicate random colors in NewPaletteForm.js
 
 
-## Libraries Used
----------------
+
+## LIBRARIES USED
 
 ### Copy to clipboard
 - Install: `npm install --save react-copy-to-clipboard`
@@ -323,7 +324,7 @@
 - Add styles in PaletteListStyles.js
 
 
-
+------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
