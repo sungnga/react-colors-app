@@ -231,6 +231,7 @@
   - To solve this problem, change the handleClick arrow function to be a separate function and pass it down as props to MiniPalette component
 - Cleaning things up
   - Fix navbar slider side and add classnames to ColorBox component
+  - Clean up all files
 
 
 ## Libraries Used

@@ -28,6 +28,9 @@ export default {
 		width: '340px',
 		margin: '0px 10px',
 		display: 'inline-block',
+    "& .rc-slider-track": {
+      backgroundColor: "transparent"
+    },
 		'& .rc-slider-rail': {
 			height: '8px'
 		},
@@ -40,9 +43,6 @@ export default {
 			height: '15px',
 			marginLeft: '-7px',
 			marginTop: '-4px'
-		},
-		'& .rc-slider-track': {
-			backgroundColor: 'transparent'
 		},
 		[sizes.down('sm')]: {
 			width: '150px'
