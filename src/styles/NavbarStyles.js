@@ -10,7 +10,8 @@ export default {
 	logo: {
 		marginRight: '15px',
 		padding: '0 15px',
-		fontSize: '22px',
+    fontSize: '22px',
+    fontWeight: '500',
 		backgroundColor: '#eceff1',
 		fontFamily: 'Roboto',
 		height: '100%',
