@@ -34,7 +34,7 @@ class Navbar extends Component {
 		return (
 			<header className={classes.Navbar}>
 				<div className={classes.logo}>
-					<Link to='/'>Color Palettes</Link>
+					<Link to='/'>ColorPalette</Link>
 				</div>
 				{showingAllColors && (
 					<div>

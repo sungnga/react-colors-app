@@ -1,4 +1,4 @@
-## Notes and steps to building this application
+## NOTES AND STEPS TO BUILDING THIS APPLICATION
 The codebase for each step can be found in the commit link
 
 ### [1. Create project using create-react-app](https://github.com/sungnga/react-colors-app/commit/6028992855c52f60ae669643f7b481908cada3e6?ts=2)

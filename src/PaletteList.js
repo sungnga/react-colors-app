@@ -48,8 +48,8 @@ class PaletteList extends Component {
 			<div className={classes.root}>
 				<div className={classes.container}>
 					<nav className={classes.nav}>
-						<h1 className={classes.heading}>Color Picker</h1>
-						<Link to='/palette/new'>Create New Palette</Link>
+						<h1 className={classes.heading}>ColorPalette</h1>
+						<Link to='/palette/new'>Create Palette</Link>
 					</nav>
 					<TransitionGroup className={classes.palettes}>
 						{palettes.map((palette) => (
